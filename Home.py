@@ -32,7 +32,12 @@ authenticator = stauth.Authenticate(
 )
 
 # Login form
-name, authentication_status, username = authenticator.login(location='main')
+# Fixed login for latest streamlit-authenticator
+try:
+    name, authentication_status, username = authenticator.login('main')
+except:
+    name, authentication_status, username = authenticator.login('Login', 'main')
+
 
 # Check authentication status
 if authentication_status == False:
@@ -300,4 +305,5 @@ st.markdown(f"""
     <p>📧 Need help? Contact support@cpginventory.com</p>
     <p>© 2025 Smart CPG Inventory Management System | Built with Streamlit & Python</p>
 </div>
+
 """, unsafe_allow_html=True)
