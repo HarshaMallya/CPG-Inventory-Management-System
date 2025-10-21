@@ -4,6 +4,10 @@ from datetime import datetime
 import os
 import bcrypt
 
+os.makedirs('data', exist_ok=True)
+os.makedirs('logs', exist_ok=True)
+os.makedirs('reports', exist_ok=True)
+
 class InventoryDB:
     def __init__(self, db_name='data/inventory.db'):
         os.makedirs('data', exist_ok=True)
@@ -195,3 +199,4 @@ class InventoryDB:
             return df
         finally:
             conn.close()
+
