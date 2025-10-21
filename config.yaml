@@ -1,0 +1,26 @@
+credentials:
+  usernames:
+    admin:
+      email: admin@cpgcompany.com
+      name: Admin User
+      password: $2b$12$s7ndok3/.lLKewXwfQcO1udZ0v6cEisWFJ4Uoxv1JV91h3vlrU2Xe
+      role: Admin
+    manager:
+      email: manager@cpgcompany.com
+      name: Store Manager
+      password: $2b$12$wsAK6/FYUTzdsj7G.ACriOgwjSF/WcDixpToVKnovagnvyR4HXala
+      role: Manager
+    employee:
+      email: employee@cpgcompany.com
+      name: Employee User
+      password: $2b$12$ndHysmqjHg.pvRbl4kQfheBHo7KThWSUiXMkxtH9f1UFXcJGGaSzy
+      role: Employee
+
+cookie:
+  expiry_days: 30
+  key: cpg_inventory_signature_key_2025_secure_random_string
+  name: cpg_inventory_auth_cookie
+
+preauthorized:
+  emails:
+  - admin@cpgcompany.com
