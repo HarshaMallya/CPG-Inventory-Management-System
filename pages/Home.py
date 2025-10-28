@@ -48,7 +48,7 @@ load_css()
 with st.sidebar:
     # Logo
     if LOGO_FILE.exists():
-        st.image(str(LOGO_FILE), use_container_width=True)
+        st.image(str(LOGO_FILE), width=180)
     else:
         st.warning("⚠️ Logo not found in /assets folder!")
 
@@ -146,3 +146,4 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
