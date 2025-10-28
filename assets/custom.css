@@ -1,0 +1,138 @@
+/* ------------------------------------------------------------
+   CPG Inventory Dashboard – Modern Dark Corporate Theme
+   Unified design for all Streamlit pages
+------------------------------------------------------------- */
+
+/* Global -------------------------------------------------- */
+html, body, [class*="css"] {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background-color: #0f172a !important;  /* deep navy black */
+  color: #f8fafc !important;
+  scroll-behavior: smooth;
+}
+
+/* Typography ---------------------------------------------- */
+h1, h2, h3, h4 {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+p, span, li {
+  color: #cbd5e1;
+}
+
+/* Sidebar ------------------------------------------------- */
+[data-testid="stSidebar"] {
+  background-color: #1e293b !important; /* dark slate blue */
+  border-right: 1px solid #334155;
+  padding-top: 10px;
+}
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] p {
+  color: #e2e8f0;
+}
+.sidebar-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f8fafc;
+  text-align: center;
+  margin: 0.8rem 0;
+}
+[data-testid="stSidebar"] img {
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* KPI Cards ----------------------------------------------- */
+.card {
+  background: #1e293b;  /* dark slate */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.kpi-value {
+  font-size: 26px;
+  font-weight: 600;
+  color: #38bdf8; /* light blue accent */
+  margin-top: 4px;
+}
+.kpi {
+  font-size: 18px;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+/* Tables -------------------------------------------------- */
+thead tr th {
+  background-color: #334155 !important;
+  color: #f8fafc !important;
+  text-align: left !important;
+}
+tbody tr:nth-child(even) {
+  background-color: #1e293b !important;
+}
+tbody tr:nth-child(odd) {
+  background-color: #0f172a !important;
+}
+tbody tr:hover {
+  background-color: #334155 !important;
+}
+
+/* Charts -------------------------------------------------- */
+[data-testid="stVegaLiteChart"], [data-testid="stPlotlyChart"], .css-1ht1j8u, .css-1uixxvy {
+  border-radius: 12px;
+  background-color: #1e293b !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  padding: 8px;
+}
+
+/* Buttons ------------------------------------------------- */
+.stButton>button {
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.stButton>button:hover {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+/* Fade Animation ------------------------------------------ */
+.fade-in {
+  animation: fadeIn 1.2s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer -------------------------------------------------- */
+footer {
+  visibility: hidden;
+}
+
+/* Centered Logo ------------------------------------------- */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.logo-container img {
+  width: 160px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+}
