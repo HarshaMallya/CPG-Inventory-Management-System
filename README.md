@@ -1,7 +1,7 @@
 # 🏭 CPG Inventory Dashboard
 
 An **AI-powered inventory management system** for Consumer Packaged Goods (CPG) companies.  
-Built with **Python** and **Streamlit**, it provides intelligent sales forecasting, stock management, and performance analytics through a clean, dark-themed dashboard.
+Built with **Python** and **Streamlit**, it provides intelligent sales forecasting, stock management, and performance analytics through a clean, dark-themed dashboard.    https://cpg-inventory-management-system-bmtjfhq72iswv6t3yupmbt.streamlit.app/
 
 ---
 
